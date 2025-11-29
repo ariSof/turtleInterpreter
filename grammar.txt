@@ -1,0 +1,4 @@
+command ::= move | turn | draw | '(' command ')'
+move ::= int
+turn ::= int
+draw ::= int
