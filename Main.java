@@ -5,6 +5,7 @@ public class Main {
         FileReader reader = new FileReader();
         reader.setFileName("turtleProgram.txt");
 
+        Visitor visitor = new ConcreteTraversalVisitor();
         Turtle myTurtle = new Turtle();
         ArrayList<String> commands = reader.readFile();
         AbstractCommand theCommand;
@@ -26,6 +27,7 @@ public class Main {
 
             if(word[0].equals("move")){
                 theCommand = new MoveCommand(myTurtle);
+                
                 //System.out.println("Created Move command");
             }
             else if(word[0].equals("draw")){
@@ -42,10 +44,12 @@ public class Main {
                 System.out.println("Error reading your file.");
             }
 
+            theCommand.accept(visitor);
             theCommand.interpret(distance);
         }
 
         //Turtle check after:
         System.out.println(myTurtle.toString());
+        System.out.println(visitor.toString());
     }
 }

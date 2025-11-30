@@ -9,5 +9,9 @@ public class TurnCommand implements AbstractCommand {
     public void interpret(int angle){
         turtle.setOrientation(angle);
     }
+
+    public void accept(Visitor v){
+        v.visitConcreteTurnElement(this);
+    }
 }
     
