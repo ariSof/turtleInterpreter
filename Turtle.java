@@ -4,6 +4,7 @@ public class Turtle {
     int location;
     int orientation;
     boolean penUp;
+    private double headDegrees; 
 
     public Turtle(){
         location = 0;
