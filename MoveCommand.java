@@ -8,7 +8,7 @@ public class MoveCommand implements AbstractCommand {
 
     public void interpret(int distance){
         this.distance = distance;
-        turtle.setLocation(distance);
+        turtle.move(distance);
     }
 
     public void accept(Visitor v){
