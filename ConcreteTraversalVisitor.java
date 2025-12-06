@@ -18,6 +18,9 @@ public class ConcreteTraversalVisitor extends Visitor {
     void visitConcreteTurnElement(TurnCommand turn){
         mementos.add(turn);
     }
+    public ArrayList<AbstractCommand> getMementos(){
+        return mementos;
+    }
 
     @Override
     public String toString(){
