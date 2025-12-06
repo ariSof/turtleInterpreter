@@ -1,0 +1,8 @@
+draw 20
+turn 45
+draw 10
+turn -45
+draw 10
+turn -90
+move 5
+draw 20
