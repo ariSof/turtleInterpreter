@@ -72,7 +72,7 @@ public double getDistanceX(){
     }
     @Override
     public String toString() {
-         
-        return "Turtle: location ("+ distanceX + ", " + distanceY + ") orientation " + headDegrees + ", is pen up? " + penUp;
+        System.out.printf("Turtle: location (%.2f, %.2f)", distanceX, distanceY);
+        return " Orientation= " + headDegrees + " degrees, is pen up? " + penUp;
     }
 }

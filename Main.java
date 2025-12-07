@@ -5,7 +5,7 @@ public class Main {
         FileReader reader = new FileReader();
         reader.setFileName("turtleProgram.txt");
 
-        Visitor visitor = new ConcreteTraversalVisitor();
+        //Visitor visitor = new ConcreteTraversalVisitor();
         ConcreteTraversalVisitor traversalVisitor = new ConcreteTraversalVisitor();
         Turtle myTurtle = new Turtle();
         ArrayList<String> commands = reader.readFile();
@@ -48,7 +48,7 @@ public class Main {
             theCommand.accept(traversalVisitor);
             theCommand.interpret(distance);
         }
-        System.out.println(myTurtle.toString());
+        //System.out.println(myTurtle.toString());
         System.out.println("Traversal="+traversalVisitor.toString());
 
         TotalDistanceVisitor distanceVisitor = new TotalDistanceVisitor();
@@ -60,7 +60,7 @@ public class Main {
 
         //Turtle check after:
         System.out.println(myTurtle.toString());
-        System.out.println(visitor.toString());
+        //System.out.println(visitor.toString());
        System.out.println(distanceVisitor.toString());
     }
 }
