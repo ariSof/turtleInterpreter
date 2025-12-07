@@ -3,15 +3,19 @@
 public class Turtle {
     //int location;
     //int orientation;
-    private double distanceX = 0.0;
-    private double distanceY = 0.0;
+    private double distanceX;
+    private double distanceY;
 
     boolean penUp;
-    private double headDegrees = 0.0; 
+    private double headDegrees; 
 
     public Turtle(){
         //location = 0;
        // orientation = 0;
+       distanceX = 0;
+       distanceY = 0;
+       headDegrees = 0;
+
         penUp = true;
     }
     public void move(double distance){
