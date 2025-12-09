@@ -1,3 +1,6 @@
+/**
+ * Visitor class used to traverse the abstract tree of mementos created by interpreter
+ */
 import java.util.ArrayList;
 
 public class ConcreteTraversalVisitor extends Visitor {

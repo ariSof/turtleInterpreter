@@ -1,5 +1,9 @@
-// Turtle class keeps track of its own location, orientation and penUp/down
+/**
+    Mock Turtle Class that mimics the behavior of a real Turtle class, with move and turn operations.
 
+Turtle class keeps track of its own (x, y) location, orientation in degrees, and penUp/down
+//Pen is always up [1], unless draw sets to down [0], uppon completting draw, pen is set to Up[1] again.
+*/
 public class Turtle {
     //int location;
     //int orientation;

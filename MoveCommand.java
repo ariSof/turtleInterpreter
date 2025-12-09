@@ -1,3 +1,8 @@
+/**
+ * Class used to interpret the move command for turtle
+ * 
+ * Accepts a Visitor
+ */
 public class MoveCommand implements AbstractCommand {
     
     Turtle turtle;

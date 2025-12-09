@@ -1,3 +1,25 @@
+/* 
+  Turtle Graphics Interpreter
+  Main uses a fileReader that reads from a text file.
+  The commands listed in the file are Interpreted and using Visitor pattern,
+  we traverse the abstract tree created from interpreting file, and use 
+  a separate Visitor for calculating the total distance traveled in the given program. 
+
+  Collaborators:
+  Sofia Villalpando and Julian Grado
+
+  The following example is from reading a file that would draw a square.
+
+  Example from the terminal:
+  Run Main.java
+
+****************************************
+Begining Turtle: location (0.00, 0.00) Orientation= 0.0 degrees, is pen up? true
+Traversal=[DrawCommand@2d140a7, MoveCommand@347bdeef, TurnCommand@2aa27288, DrawCommand@7f34a967, MoveCommand@77e80a5e, TurnCommand@1d8e2eea, DrawCommand@240139e1, MoveCommand@7ea4d397, TurnCommand@49298ce7, DrawCommand@253c1256, MoveCommand@8dfe921]
+End Turtle: location (-0.00, 0.00) Orientation= 270.0 degrees, is pen up? true
+Total Distance Turtle Travel: 20 meters
+*/ 
+
 import java.util.ArrayList;
 
 public class Main {
