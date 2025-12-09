@@ -1,3 +1,7 @@
+/**
+    Visitor Class used to calculate the total distance traveled by turtle
+**/
+
 public class TotalDistanceVisitor extends Visitor {
     private int totalDistance = 0;
 

@@ -1,3 +1,8 @@
+/**
+ * Class used to interpret the turn command for turtle
+ * 
+ * Accepts a Visitor
+ */
 public class TurnCommand implements AbstractCommand {
     
     Turtle turtle;

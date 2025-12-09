@@ -1,3 +1,10 @@
+/*
+    DrawCommand class is interpreted by first setting the turtles
+    pen down [0], using moveCommand to move the distance specified,
+    interpreting that distance, and setting the penUp [1] again.
+    
+    The visitor is used here.
+*/
 public class DrawCommand implements AbstractCommand {
     
     Turtle turtle;

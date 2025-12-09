@@ -1,3 +1,10 @@
+/**
+JUnit test used to test Turtle class that is used by interpreter
+Tested move command in x direction, in y direction, tested moving in a 45 degree angle
+And using a combination of commands to have turtle move in a square returning to 
+the same location it began.
+ */
+
 import org.junit.Assert;
 import org.junit.Test;
 

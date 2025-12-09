@@ -1,3 +1,7 @@
+/**
+ * Class reads the file and returns it in a list of commands
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
